@@ -1,0 +1,74 @@
+﻿@model Vgather.Models.Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Company_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email_ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Registration_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
